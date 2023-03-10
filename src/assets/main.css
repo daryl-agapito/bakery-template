@@ -1,0 +1,127 @@
+@import './base.css';
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+#app {
+  font-weight: normal;
+  width: -webkit-fill-available;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+/* custom-css */
+.h-hero {
+  height: 40rem;
+}
+
+.sub_header {
+  background-color: #343434;
+}
+
+.sub_header .sub_header-bar-left > span {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: normal;
+}
+
+.content-wrapper {
+  padding: 5rem 1rem;
+}
+
+.b--spacer {
+  padding-bottom: 5rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card_text {
+  min-height: 12rem;
+  margin-top: 2.8rem;
+  background-color: #ffffffb8;
+}
+
+.read_more {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  display: flex;
+  justify-items: flex-end;
+}
+
+.card:hover .read_more {
+  opacity: 1;
+}
+
+.icons {
+  left: 45%;
+  transform: translate(0%, 50%);
+  z-index: 1;
+  column-gap: 0.5rem;
+  display: flex;
+}
+
+/*-- Swiper --*/
+.swiper {
+  width: 100%;
+  height: 30rem;
+}
+
+.swiper .swiper-wrapper {
+  z-index: 12 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 2rem);
+}
+
+/* ---------- */
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+  }
+}
